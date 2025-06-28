@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form task</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container form-container">
+      <a href="./index.html" class="nav-link back-link">
+        <p>Go back</p>
+      </a>
+      <h1>Feedback Form</h1>
+      <form class="feedback-form" autocomplete="off">
+        <label class="form-label" for="email">Email</label>
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label class="form-label" for="message">Message</label>
+        <textarea
+          class="form-text"
+          name="message"
+          id="message"
+          rows="8"
+          placeholder="Your message"
+          required
+        ></textarea>
+
+        <button class="form-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <script type="module" src="./js/2-form.js"></script>
+  </body>
+</html>
