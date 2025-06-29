@@ -1,4 +1,6 @@
 import JustValidate from 'just-validate';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 
 let LOCAL_VALUES = 'feedback-form-state';
 
@@ -38,7 +40,6 @@ function updateText() {
     const field = document.querySelector(`[name="${key}"]`);
     if (field) {
       field.value = keyValue;
-      updateLocalStorage(prepareData(key, keyValue));
     }
   }
 }
