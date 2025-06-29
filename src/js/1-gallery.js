@@ -97,7 +97,7 @@ let gallery = new SimpleLightbox('.gallery a', {
   captions: true,
   captionsData: 'alt',
   captionPosition: 'bottom',
-  animationSpeed: 250,
+  captionDelay: 250,
   showCounter: false,
 });
 
